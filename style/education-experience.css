@@ -1,0 +1,155 @@
+:root{
+    --theme-bg:#5569DC;
+    --overlay-color:#FFFFFF;
+    --span-color:#1C2349;
+    --theme-font-family:"Playfair Display", serif;
+    --normal-font-family:sans-serif;
+    --about-bg: #5569DC1A;
+}
+
+.main .education-experience{
+    height: 695px;
+    width: 100%;
+    line-height: 1.4em;
+    background-color: var(--overlay-color);
+    padding: 0px 120px;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .education-experience .education{
+ width: 310px;
+ height: 100%;
+ text-align: justify;
+ /* layout */
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly
+}
+
+.main .education-experience .education span{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main .education-experience .education span:nth-child(1){
+    row-gap: 22px;
+}
+
+.main .education-experience .education span h2{
+    color: var(--theme-bg);
+    font-size: 32px;
+    font-family: var(--theme-font-family);
+    font-weight: normal;
+    font-style: italic;
+    height: 25px;
+}
+
+.main .education-experience .education span h4{
+    color: var(--span-color);
+}
+
+.main .education-experience .education span p{
+    color: var(--span-color);
+    font-size: 16px;
+    font-family: var(--normal-font-family);
+    letter-spacing: 2px;
+}
+
+.main .education-experience .experience{
+    width: 310px;
+    height: 100%;
+    margin-right: 280px;
+    text-align: justify;
+    padding-top: 35px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+
+.main .education-experience .experience span{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main .education-experience .experience span:nth-child(1){
+    row-gap: 22px;
+}
+
+.main .education-experience .experience h2{
+    color: var(--theme-bg);
+    font-size: 32px;
+    font-family: var(--theme-font-family);
+    font-weight: normal;
+    font-style: italic;
+    height: 30px;
+}
+
+.main .education-experience .experience span h4{
+    color: var(--span-color);
+}
+
+.main .education-experience .experience p{
+    color: var(--span-color);
+    font-size: 16px;
+    font-family: var(--normal-font-family);
+    letter-spacing: 2px;
+}
+
+
+/* Media Queries */
+
+/* Mobile approach 400px */
+
+
+@media (max-width:400px){
+
+    /* DIV-3 */
+
+    .main .education-experience {
+        height: 100%;
+        padding: 30px 30px;
+        flex-wrap: wrap;
+ }
+
+ .main .education-experience .education{
+    row-gap: 20px;
+ }
+
+ .main .education-experience .education span:nth-child(1) {
+    row-gap: 15px;
+}
+
+ .main .education-experience .education span h2{
+   font-size: 28px;
+ }
+
+ .main .education-experience .education span p{
+    font-size: 13px;
+  }
+
+  .main .education-experience .experience {
+    margin-right: unset;
+    row-gap: 20px;
+ }
+
+
+ .main .education-experience .experience span h2{
+    font-size: 28px;
+  }
+ 
+  .main .education-experience .experience span p{
+     font-size: 13px;
+   }
+
+ .main .education-experience .experience span:nth-child(1) {
+    row-gap: 15px;
+}
+
+
+}

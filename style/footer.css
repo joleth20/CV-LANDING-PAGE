@@ -1,0 +1,170 @@
+:root{
+    --theme-bg:#5569DC;
+    --overlay-color:#FFFFFF;
+    --span-color:#1C2349;
+    --theme-font-family:"Playfair Display", serif;
+    --normal-font-family:sans-serif;
+    --about-bg: #5569DC1A;
+}
+
+/* Footer */
+
+.main .footer{
+    height: 425px;
+    width: 100%;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+}
+
+.main .footer .top-footer{
+    height: 351px;
+    width: 100%;
+    padding: 50px 120px;
+    background-color: var(--about-bg);
+   /* layout */
+   display: flex;
+   column-gap:300px;
+}
+
+.main .footer .top-footer .text-icons{
+    height: 100%;
+    width: 234px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main .footer .top-footer .text-icons  h2{
+    color: var(--span-color);
+    font-family: var(--theme-font-family);
+    font-size: 32px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.main .footer .top-footer .text-icons ul{
+    width: 144px;
+    height: 24px;
+    /* layout */
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .footer .top-footer .email-number-button{
+    height: 100%;
+    width: 100%;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main .footer .top-footer .email-number-button span{
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.main .footer .top-footer .email-number-button span a{
+    color: var(--span-color);
+    font-size: 16px;
+    font-family: var(--normal-font-family);
+}
+
+
+.main .footer .top-footer .email-number-button span p{
+    color: var(--span-color);
+    font-size: 16px;
+    font-family: var(--normal-font-family);
+}
+
+.main .footer .top-footer .email-number-button span button{
+    width: 160px;
+    height: 52px;
+    background: var(--theme-bg);
+    border: none;
+    color: var(--overlay-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    font-weight: normal;
+    outline: none;
+}
+
+.main .footer .bottom-footer{
+    height: 75px;
+    width: 100%;
+    padding: 50px 120px;
+    background-color: var(--theme-bg);
+}
+
+.main .footer .bottom-footer span{
+    color: var(--overlay-color);
+    font-size: 14px;
+    font-family: var(--theme-font-family);
+    font-style: italic;
+}
+
+.main .footer .bottom-footer span a{
+    color: var(--overlay-color);
+    display: inline;
+    font-size: 14px;
+    font-family: var(--theme-font-family);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+/* Mobile approach 400px */
+
+@media (max-width: 400px) {
+
+    .main .footer{
+        height: 100%;
+    }
+
+    .main .footer .top-footer {
+        height: 100%;
+        width: 100%;
+        padding: 25px 20px;
+        flex-wrap: wrap;
+        column-gap: 300px;
+        row-gap: 30px;
+    }
+
+    .main .footer .top-footer .text-icons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        row-gap: 20px;
+    }
+
+    .main .footer .top-footer .text-icons  h2{
+        font-size: 23px;
+    }
+
+    
+    .main .footer .top-footer .email-number-button {
+        row-gap: 20px;
+    }
+
+    .main .footer .top-footer .email-number-button span {
+        width: 100%;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .main .footer .bottom-footer {
+        padding: 28px 90px;
+        text-align: center;
+        /* layout */
+        display: flex;
+        align-items: center;
+    }
+}

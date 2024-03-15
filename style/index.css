@@ -1,0 +1,8 @@
+/* Import CSS Files */
+@import './default.css';
+@import './header-main.css';
+@import './about.css';
+@import './education-experience.css';
+@import './skills-languages.css';
+@import './awards-interests.css';
+@import './footer.css';

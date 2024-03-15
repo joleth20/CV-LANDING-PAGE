@@ -1,0 +1,186 @@
+:root{
+    --theme-bg:#5569DC;
+    --overlay-color:#FFFFFF;
+    --span-color:#1C2349;
+    --theme-font-family:"Playfair Display", serif;
+    --normal-font-family:sans-serif;
+    --about-bg: #5569DC1A;
+}
+
+.main .awards-interests{
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+    padding: 50px 120px;
+    /* layout */
+    display: flex;
+    column-gap: 100px;
+}
+
+
+.main .awards-interests .awards{
+height: 200px;
+width: 454px;
+/* layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.main .awards-interests .awards span{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main .awards-interests .awards span h2{
+    color: var(--theme-bg);
+    font-size: 32px;
+    font-family: var(--theme-font-family);
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+.main .awards-interests .awards span p{
+    color: var(--theme-bg);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+
+.main .awards-interests .awards  p{
+    color: var(--span-color);
+    font-size: 16px;
+    font-family: var(--normal-font-family);
+    line-height: 1.5em;
+}
+
+
+.main .awards-interests .interests{
+height: 200px;
+width: 230px;
+/* layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.main .awards-interests .interests span{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main .awards-interests .interests span h2{
+    color: var(--theme-bg);
+    font-size: 32px;
+    font-family: var(--theme-font-family);
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+.main .awards-interests .interests span p{
+    color: var(--theme-bg);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.main .awards-interests .interests .list-interests .one{
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.main .awards-interests .interests .list-interests .one p{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: unset;
+    
+    
+}
+
+.main .awards-interests .interests .list-interests .two{
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+}
+
+
+.main .awards-interests .interests .list-interests .two p{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: unset;
+
+}
+
+.main .awards-interests .interests .list-interests .three{
+    /* layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.main .awards-interests .interests .list-interests .three p{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: unset;
+
+}
+
+
+/* Media Queries */
+
+/* Mobile approach 400px */
+
+
+@media (max-width: 400px) {
+    .main .awards-interests {
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    
+    .main .awards-interests .awards {
+        height: 200px;
+        width: 454px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    
+    .main .awards-interests .awards span h2{
+        font-size: 28px;
+    }
+    
+    .main .awards-interests .awards p{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .main .awards-interests .interests{
+        justify-content: space-evenly;
+    }
+    
+    
+    .main .awards-interests .interests span h2{
+        font-size: 28px;
+    }
+
+}

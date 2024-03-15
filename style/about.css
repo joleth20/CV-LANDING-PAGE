@@ -1,0 +1,84 @@
+:root{
+    --theme-bg:#5569DC;
+    --overlay-color:#FFFFFF;
+    --span-color:#1C2349;
+    --theme-font-family:"Playfair Display", serif;
+    --normal-font-family:sans-serif;
+    --about-bg: #5569DC1A;
+}
+
+.main .about{
+ height: 460px;
+ width: 100%;    
+ background-color: var(--about-bg);
+ padding: 0px 120px; 
+ /* layout */
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ row-gap: 20px;
+
+}
+
+.main .about h2{
+    color: var(--theme-bg);
+    font-weight: normal;
+    font-size: 32px;
+    font-family: var(--theme-font-family);
+    font-style: italic;
+}
+
+.main .about p:nth-child(2){
+color: var(--theme-bg);
+font-weight: normal;
+font-size: 16px;
+font-family: var(--normal-font-family);
+letter-spacing: 2px;
+}
+
+.main .about p:nth-child(4){
+    color: var(--theme-bg);
+    font-weight: normal;
+    font-family: var(--normal-font-family);
+    font-size: 21px;
+    line-height: 2em;
+}
+
+/* Media Queries */
+
+/* Mobile approach 400px */
+
+@media (max-width:400px){
+    
+.main .about{
+        height: 100%;
+        padding: 30px 30px;
+        row-gap: 10px;
+}
+
+.main .about br{
+    content: "";
+}
+
+.main .about h2{
+    font-size: 28px;
+}
+
+.main .about p:nth-child(2){
+    color: var(--theme-bg);
+    font-weight: normal;
+    font-size: 13px;
+    font-family: var(--normal-font-family);
+    letter-spacing: 2px;
+    }
+    
+    .main .about p:nth-child(4){
+        color: var(--theme-bg);
+        font-weight: normal;
+        font-family: var(--normal-font-family);
+        font-size: 16px;
+        line-height: 2em;
+        text-align: justify;
+    }
+
+}

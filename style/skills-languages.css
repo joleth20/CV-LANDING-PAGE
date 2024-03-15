@@ -1,0 +1,204 @@
+:root{
+    --theme-bg:#5569DC;
+    --overlay-color:#FFFFFF;
+    --span-color:#1C2349;
+    --theme-font-family:"Playfair Display", serif;
+    --normal-font-family:sans-serif;
+    --horizontal-line:rgba( 202, 212, 232);
+}
+
+
+.main .skills-languages{
+    height: 540px;
+    width: 100%;
+    padding: 70px 120px;
+    background-color: var(--overlay-color);
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+
+.main .skills-languages span{
+    height: 110px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.main .skills-languages span h2{
+    color: var(--theme-bg);
+    font-size: 32px;
+    font-style: italic;
+    font-family: var(--theme-font-family);
+    font-weight: normal;
+}
+
+.main .skills-languages span p{
+    color: var(--theme-bg);
+    font-size: 16px;
+    font-family: var(--normal-font-family);
+    letter-spacing: 2px ;
+}
+
+
+.main .skills-languages .progress-bar{
+    height: 100%;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.main .skills-languages .progress-bar .html-css{
+    /* layout */
+    display: flex;
+    column-gap: 40px;
+}
+
+.main .skills-languages .progress-bar .html-css label{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    width: 310px;
+
+}
+
+.main .skills-languages .progress-bar .html-css progress{
+    color: var(--theme-bg);
+    width: 621px;
+    height: 5px;
+}
+
+.main .skills-languages .progress-bar .javascript{
+    /* layout */
+    display: flex;
+    column-gap: 40px;
+}
+
+.main .skills-languages .progress-bar .javascript label{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    width: 310px;
+}
+
+.main .skills-languages .progress-bar .javascript progress{
+    color: var(--theme-bg);
+    width: 621px;
+    height: 5px;
+}
+
+
+.main .skills-languages .progress-bar .canva{
+    /* layout */
+    display: flex;
+    column-gap: 40px;
+}
+
+.main .skills-languages .progress-bar .canva label{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    width: 310px;
+}
+
+.main .skills-languages .progress-bar .canva progress{
+    color: var(--theme-bg);
+    width: 621px;
+    height: 5px;
+}
+
+.main .skills-languages .horizontal-line{
+background-color: var(--horizontal-line);
+display: block;
+width: 30px;
+height: 1px;
+}
+
+.main .skills-languages .progress-bar .english{
+    /* layout */
+    display: flex;
+    column-gap: 40px;
+}
+
+.main .skills-languages .progress-bar .english label{
+    color: var(--span-color);
+    font-family: var(--normal-font-family);
+    font-size: 16px;
+    width: 310px;
+}
+
+.main .skills-languages .progress-bar .english progress{
+    color: var(--theme-bg);
+    width: 621px;
+    height: 5px;
+}
+
+/* Media Queries */
+
+/* Mobile approach 400px */
+@media (max-width:400px) {
+
+    .main .skills-languages {
+      height: 100%;
+      padding: 10px 30px;
+      row-gap: 30px;
+  }
+  
+  .main .skills-languages span{
+    height: 100%;
+  }
+
+  .main .skills-languages span h2{
+      font-size: 28px;
+  }
+  
+  .main .skills-languages span p{
+      font-size: 13px
+  }
+  
+  .main .skills-languages .progress-bar {
+      row-gap: 20px;
+  }
+  
+  .main .skills-languages .progress-bar .html-css {   
+      flex-direction: column;
+      row-gap: 10px;
+  }
+  
+  .main .skills-languages .progress-bar .html-css progress {
+      width: 100%;
+  }
+  
+  .main .skills-languages .progress-bar .javascript {   
+      flex-direction: column;
+      row-gap: 10px;
+  }
+  
+  .main .skills-languages .progress-bar .javascript progress {
+      width: 100%;
+  }
+  
+  
+  .main .skills-languages .progress-bar .canva {   
+      flex-direction: column;
+      row-gap: 10px;
+  }
+  
+  .main .skills-languages .progress-bar .canva progress {
+      width: 100%;
+  }
+  
+  .main .skills-languages .progress-bar .english {   
+      flex-direction: column;
+      row-gap: 10px;
+  }
+  
+  .main .skills-languages .progress-bar .english progress {
+      width: 100%;
+  }
+  
+  
+  }
